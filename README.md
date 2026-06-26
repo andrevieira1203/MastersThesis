@@ -254,7 +254,6 @@ tokenizer = AutoTokenizer.from_pretrained(repo_id)
 
 with open(config_path) as f:
     config = json.load(f)
-# Load into XLMRMultiLabelNER (see src/testing.py for class definition)
 ```
 
 ---
