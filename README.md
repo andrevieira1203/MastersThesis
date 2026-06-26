@@ -264,7 +264,7 @@ with open(config_path) as f:
 
 ## 11. Reporting Issues
 
-Please report any issues or bugs through the [GitHub issue tracker](https://github.com/andrevieira1203/PersuasionLens/issues).
+Please report any issues or bugs through the [GitHub issue tracker](https://github.com/andrevieira1203/MastersThesis/issues).
 
 When reporting an issue, please include:
 - Python version
