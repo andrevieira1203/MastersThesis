@@ -156,9 +156,9 @@ We used `paraphrase-multilingual-MiniLM-L12-v2` to embed all training documents 
 │   ├── translate_it_to_pt.py          # IT→PT translation (Google + LinguAligner)
 │   ├── translate_fr_to_pt.py          # FR→PT translation (Google + LinguAligner)
 │   ├── translate_ru_to_pt.py          # RU→PT translation (DeepL + LinguAligner)
+└── .gitignore
 └── README.md
 └── requirements.txt
-└── .gitignore
 ```
 ---
 
