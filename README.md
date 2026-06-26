@@ -227,6 +227,10 @@ The task requires detecting spans of text that employ persuasion techniques and 
 | Call | Appeal to Time, Conversation Killer, Slogans |
 | Manipulative Wording | Exaggeration/Minimisation, Loaded Language, Obfuscation, Repetition |
 
+### Data Availability
+
+The training data used in this project is provided by the CLEF-2024 CheckThat! Lab organizers and is not publicly redistributable due to licensing restrictions. To obtain the data, please refer to the [official CLEF-2024 CheckThat! Lab page](https://checkthat.gitlab.io/clef2024/task3/) and follow the data request procedure. The machine-translated versions (IT→PT, FR→PT, RU→PT) can be reproduced using the scripts in the `translation/` folder once the original data is obtained.
+
 ### Challenge
 
 - **No Portuguese training data** — the system must rely entirely on cross-lingual transfer
@@ -274,7 +278,7 @@ When reporting an issue, please include:
 
 This project is developed as part of an MSc thesis at FCUP / INESC TEC.
 
-The training data is provided by the CLEF-2024 CheckThat! Lab organizers and is subject to their usage terms.
+The training data is provided by the CLEF-2024 CheckThat! Lab organizers and is not included in this repository due to licensing restrictions. See Section 9 for access instructions.
 
 ---
 
