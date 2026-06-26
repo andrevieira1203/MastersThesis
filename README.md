@@ -138,37 +138,24 @@ We used `paraphrase-multilingual-MiniLM-L12-v2` to embed all training documents 
 ## 6. Repository Structure
 
 ```
-├── data/
-│   └── json/                          # Training data (all languages + translations)
-│       ├── train.json                 # English (536 docs, 9002 spans)
-│       ├── train_fr.json              # French (211 docs)
-│       ├── train_ge.json              # German (177 docs)
-│       ├── train_it.json              # Italian (303 docs)
-│       ├── train_po.json              # Polish (194 docs)
-│       ├── train_ru.json              # Russian (191 docs)
-│       ├── train_it_pt.json           # Italian→Portuguese (302 docs)
-│       ├── train_fr_pt.json           # French→Portuguese (208 docs)
-│       ├── train_ru_pt.json           # Russian→Portuguese (191 docs)
-│       ├── dev*.json                  # Dev sets per language
-│       └── checkthat24_pt.json        # Portuguese gold test (104 docs, 1727 spans)
+├── embeddings/
+│   ├── embedding_analysis.py          # Document embedding analysis
 ├── models_improved/
 │   ├── train_model_base_v4.py         # Stage 1: multilingual base training
 │   ├── train_it_pt_finetune_v4_it.py     # Stage 2: Portuguese fine-tuning
 │   ├── testing.py                     # Inference + evaluation (Algorithm 1)
-├── embeddings/
-│   ├── embedding_analysis.py          # Document embedding analysis
-├── translation/
-│   ├── translate_it_to_pt.py          # IT→PT translation (Google + LinguAligner)
-│   ├── translate_fr_to_pt.py          # FR→PT translation (Google + LinguAligner)
-│   ├── translate_ru_to_pt.py          # RU→PT translation (DeepL + LinguAligner)
-├── results/
-│   └── results_persuasion_detection.xlsx  # All results across models
 ├── outputs_v4/
 │   └── pt_finetuned_only_it/
 │       └── best_model/                # Best trained model (IT→PT only Stage 2)
 │           ├── model.pt               # NOT included — see Section 11 (Hugging Face)
 │           ├── multilabel_config.json
 │           └── tokenizer files
+├── results/
+│   └── results_persuasion_detection.xlsx  # All results across models
+├── translation/
+│   ├── translate_it_to_pt.py          # IT→PT translation (Google + LinguAligner)
+│   ├── translate_fr_to_pt.py          # FR→PT translation (Google + LinguAligner)
+│   ├── translate_ru_to_pt.py          # RU→PT translation (DeepL + LinguAligner)
 └── README.md
 └── requirements.txt
 └── .gitignore
