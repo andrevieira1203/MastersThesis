@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PyTorch / ML
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+
+# HuggingFace cache
+.cache/
+
+# Trainer checkpoints (keep best_model via explicit tracking)
+outputs_v4/stage1/
+outputs_v4/pt_finetuned_only_it/checkpoint-*/
+
+# Weights & Biases
+wandb/
+
+# Logs
+*.log
