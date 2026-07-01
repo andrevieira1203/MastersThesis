@@ -150,7 +150,8 @@ We used `paraphrase-multilingual-MiniLM-L12-v2` to embed all training documents 
 
 ```
 ├── app/
-│   
+│   ├── app_streamlit.py              # Streamlit application (Frontend & Backend)
+│   └── requirements_streamlit.txt    # Streamlit environment dependencies
 ├── embeddings/
 │   ├── embedding_analysis.py          # Document embedding analysis
 ├── models_improved/
