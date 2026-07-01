@@ -4,6 +4,11 @@ This is the official repository of the MSc thesis **"Language Models for the Det
 
 PersuasionLens is a two-stage framework for **automatic detection and classification of 23 persuasion techniques at the text-span level** in Portuguese news articles, based on the [CLEF-2024 CheckThat! Lab Task 3](https://checkthat.gitlab.io/clef2024/task3/) formulation. The system relies entirely on **cross-lingual transfer** from six source languages, as no Portuguese training data exists. Our best model achieves **F1-micro = 0.134**, surpassing both the competition winner UniBO (0.107) and the organizers' post-competition system PersuasionMultiSpan (0.132).
 
+An **interactive web demo** is provided to test the model directly:
+
+- [PersuasionLens Demo](#6-web-demo) 
+
+
 ---
 
 ## 1. Project Overview
@@ -26,6 +31,7 @@ Together, these stages enable detection of 23 persuasion techniques without any 
 - **Two-Stage Training Pipeline:** Multilingual base training followed by targeted Portuguese fine-tuning with frozen embeddings.
 - **Per-Output Class Weighting:** Individual `pos_weight` per technique (ranging 10-100) in `BCEWithLogitsLoss`, addressing the extreme class imbalance (~0.7% positive tokens).
 - **State-of-the-Art Results:** F1-micro = 0.134, surpassing UniBO (+25% relative) and PersuasionMultiSpan (+1.4% absolute).
+- **Web Demo:** Streamlit-based interactive tool for analyzing text, URLs, and PDFs.
 
 ---
 
@@ -132,6 +138,11 @@ We used `paraphrase-multilingual-MiniLM-L12-v2` to embed all training documents 
 ### Hardware
 - Training performed on NVIDIA GTX 1050 Ti (4GB VRAM) / CPU fallback
 - Translation server: Ubuntu with NVIDIA GPU
+
+### Web Demo
+- **Flask** — Web interface and integrated frontend/backend
+- **newspaper3k** — Article extraction from URLs
+- **pdfplumber** — Text extraction from PDFs
 
 ---
 
