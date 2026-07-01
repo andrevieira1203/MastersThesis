@@ -140,7 +140,7 @@ We used `paraphrase-multilingual-MiniLM-L12-v2` to embed all training documents 
 - Translation server: Ubuntu with NVIDIA GPU
 
 ### Web Demo
-- **Flask** — Web interface and integrated frontend/backend
+- **Streamlit** — Web interface and integrated frontend/backend
 - **newspaper3k** — Article extraction from URLs
 - **pdfplumber** — Text extraction from PDFs
 
