@@ -149,6 +149,8 @@ We used `paraphrase-multilingual-MiniLM-L12-v2` to embed all training documents 
 ## 6. Repository Structure
 
 ```
+├── app/
+│   
 ├── embeddings/
 │   ├── embedding_analysis.py          # Document embedding analysis
 ├── models_improved/
